@@ -1,0 +1,5 @@
+<a href="reveiw_write.php" class="submit-btn">Write your review</a>
+            <a href="item_ranking.php" class="submit-btn">Menu and Best-Sellers</a>
+            <a href="review_customer.php" class="submit-btn">Reviews</a>
+            <a href="customer_help.html"> <button class="submit-btn">Help</button></a>
+            <a href="events.php" class="submit-btn">Events</a>

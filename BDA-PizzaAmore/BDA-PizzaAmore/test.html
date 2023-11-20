@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="test.js" defer></script>
+    <title>Management</title>
+</head>
+
+<body id="page-body">
+    <nav>
+        <ul>
+            <li>
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="nav-item">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="test.html" class="logo">
+                    <img src="logo.jpg" alt="nav-bars">
+                    <span class="nav-item">Menu</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.php“>
+                    <i class=" fa-regular fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="state.php">
+                    <i class="fa-solid fa-shop"></i>
+                    <span class="nav-item">Stores</span>
+                </a>
+            </li>
+            <li>
+                <a href="inventory.php">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="nav-item">Inventory</span>
+                </a>
+            </li>
+            <li>
+                <a href="review.php">
+                    <i class="fa-regular fa-star"></i>
+                    <span class="nav-item">Ranking</span>
+                </a>
+            </li>
+
+            <div class="logout">
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav-item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="logout.php">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="nav-item">Logout</span>
+                    </a>
+                </li>
+
+            </div>
+        </ul>
+    </nav>
+    <br><br>
+
+    <form class="test" action="test.php" method="post">
+        <p>ID<br>
+            <input type="text" name="test_id">
+        </p>
+        <p>Name<br>
+            <input type="text" name="test_name">
+        </p>
+        <p>Age<br>
+            <input type="text" name="test_age">
+        </p>
+        <p>Position<br>
+            <input type="text" name="test_address">
+        </p>
+        <input type="submit" value="print" class="submit-btn" />
+    </form>
+    <br>
+    <form class="test" action="test_db_insert.php" method="post">
+        <input type="text" name="test_id">
+        <input type="text" name="test_name">
+        <input type="text" name="test_age">
+        <input type="text" name="test_address">
+        <input type="submit" value="insert into DB" class="submit-btn" />
+    </form>
+    <br>
+    <div class="test">
+        <form action="test_db_rows.php">
+            <input type="submit" value="count DB rows" class="submit-btn">
+        </form>
+        <form action="test_db_print.php">
+            <input type="submit" value="print DB rows" class="submit-btn">
+        </form>
+    </div>
+</body>
+
+</html>
